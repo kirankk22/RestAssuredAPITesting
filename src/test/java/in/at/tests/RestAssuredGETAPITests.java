@@ -6,9 +6,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.*;
 
-public class RestAssuredGETAPITests {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class RestAssuredGETAPITests {
+	
+	@Test
+	public void RestAssuredGETAPI() {
 		// way1
 //		RestAssured.baseURI = "https://fakestoreapi.com/products";
 //		RequestSpecification requestSpec = RestAssured.given();
