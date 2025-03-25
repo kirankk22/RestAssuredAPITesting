@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="in.at.tests.RestAssuredGETAPITests" time="1.275" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="1.849" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire/surefirebooter-20250324163255375_3.jar /Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire 2025-03-24T16-32-55_333-jvmRun1 surefire-20250324163255375_1tmp surefire_0-20250324163255375_2tmp"/>
+    <property name="sun.java.command" value="/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire/surefirebooter-20250325095949878_3.jar /Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire 2025-03-25T09-59-49_844-jvmRun1 surefire-20250325095949878_1tmp surefire_0-20250325095949878_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/test-classes:/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/classes:/Users/kirankumar/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/kirankumar/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/kirankumar/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/kirankumar/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/kirankumar/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/kirankumar/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/kirankumar/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/kirankumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/kirankumar/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/kirankumar/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/kirankumar/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/kirankumar/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/kirankumar/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/kirankumar/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/kirankumar/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:/Users/kirankumar/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/kirankumar/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/kirankumar/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/kirankumar/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire/surefirebooter-20250324163255375_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kirankumar/eclipse-workspace/RestAssuredMavenProject/target/surefire/surefirebooter-20250325095949878_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+11-LTS-240"/>
     <property name="user.name" value="kirankumar"/>
@@ -52,9 +52,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="RestAssuredGETAPI" classname="in.at.tests.RestAssuredGETAPITests" time="1.106">
+  <testcase name="addProductUsingJSONAsString" classname="in.at.tests.RestAssuredPOSTRequest" time="1.105">
+    <system-out><![CDATA[{
+    "id": 21,
+    "title": "Laptop",
+    "price": "100",
+    "description": "Best Laptop",
+    "category": "electronics"
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="RestAssuredGETAPI" classname="in.at.tests.RestAssuredGETAPITests" time="0.563">
     <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Mon, 24 Mar 2025 11:02:56 GMT
+Date: Tue, 25 Mar 2025 04:29:51 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -62,13 +76,13 @@ access-control-allow-origin: *
 etag: W/"297c-h+n6NsR3M51S6528jZo3BluzvtU"
 x-powered-by: Express
 cf-cache-status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kybxzZjCTDbClzDEQs1OAupAEmnQZINVaSiRNsmUq4%2BlNMohfq1iuaN10ZwsOF1mQejGdQDaznVlvOL8dtTSBQl8IPdEO5TP8bls%2FjEcKXwUZo%2FcCZJ1W6e97UeG3DjS5mE7"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=FzLEMXOXkXki789gtCMehNQB%2BOgupyI6ahNa6cDVNU8zlry0SLul9huFbiyAlwPyydLXNjxtfc7RYpRzf0N%2Bti%2FFluAHN0P0FnTWJze4AQODFUsEkO19918c%2BDQYa0OPTRnr"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 9255addbbf7cef21-LHR
+CF-RAY: 925bab6e0f3eb54c-LHR
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
-server-timing: cfL4;desc="?proto=TCP&rtt=162197&min_rtt=162163&rtt_var=60880&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=794&delivery_rate=26372&cwnd=252&unsent_bytes=0&cid=72c92aac0526dac2&ts=253&x=0"
+server-timing: cfL4;desc="?proto=TCP&rtt=151153&min_rtt=151094&rtt_var=56779&sent=5&recv=6&lost=0&retrans=0&sent_bytes=3128&recv_bytes=794&delivery_rate=28263&cwnd=252&unsent_bytes=0&cid=9cf7e38623220edc&ts=201&x=0"
 
 [
     {
@@ -313,9 +327,5 @@ server-timing: cfL4;desc="?proto=TCP&rtt=162197&min_rtt=162163&rtt_var=60880&sen
     }
 ]
 ]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
   </testcase>
 </testsuite>
