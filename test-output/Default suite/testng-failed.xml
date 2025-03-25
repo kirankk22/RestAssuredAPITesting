@@ -5,7 +5,7 @@
     <classes>
       <class name="in.at.tests.RestAssuredPOSTRequest">
         <methods>
-          <include name="addProductUsingMap"/>
+          <include name="addProductsUsingPOJOClass"/>
         </methods>
       </class> <!-- in.at.tests.RestAssuredPOSTRequest -->
     </classes>
